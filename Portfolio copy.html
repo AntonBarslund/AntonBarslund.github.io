@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio
+    <title>Portfolio copy
     </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style copy.css">
 </head>
 <body>
     <div id="overlay" onclick="closeNav()"></div>
@@ -64,11 +64,6 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
     document.body.style.backgroundColor = "white";
     document.getElementById("overlay").style.display = "none";
-
-    var inputs = document.getElementsByClassName("inputs");
-    for(var i = 0; i < inputs.length; i++){
-        inputs[i].style.backgroundColor = "white";
-  }
 }
 
 function openNav() {
@@ -76,11 +71,6 @@ function openNav() {
   document.getElementById("main").style.marginLeft = "250px";
   document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
   document.getElementById("overlay").style.display = "block";
-  
-  var inputs = document.getElementsByClassName("inputs");
-  for(var i = 0; i < inputs.length; i++){
-    inputs[i].style.backgroundColor = "rgba(0,0,0,0.4)";
-  }
 }
 
 
