@@ -126,29 +126,66 @@ header img{
     margin: 100px 0px 100px 50px;
     padding: 20px 30px 50px 30px;
     margin: 50px;
-    width: 40%;
+    width: 50%;
     height: 700px;
     display: flex;
 }
 
 .arrow{
-    padding: 45% 0px;
+    padding: 40% 0px;
     width: 50px;
     font-size: 100px;
     cursor: pointer;
 }
 .offer{
+    border: 2px solid black;
     margin: auto;
     height: 300px;
-    width: 100px;
-    border: 1mm solid chartreuse;
+    width: 130px;
     border-radius: 10px;
     transition: 0.8s;
+    overflow: hidden;
+    position: relative;
+}
+.offerheader{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.offerdescription{
+    font-size: 15px;
+}
+
+.offertext{
+    display: none;
+}
+
+.offerprice{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 .offerfocus{
     height: 600px;
-    width: 250px;
+    width: 280px;
 }
+.offer.offerfocus .offertext{
+    display: block;
+}
+
+.offer.offerfocus .offerdescription{
+    display: none;
+}
+
+.offer.offerfocus .offerheader{
+    height: 100px;
+}
+
+
+
+
+
+
 #contactform{
     margin: 100px 50px 100px 30%;
     padding: 20px 30px 50px 30px;
