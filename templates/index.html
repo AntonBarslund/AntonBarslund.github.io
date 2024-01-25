@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <title>Bror Bruland</title>
+</head>
+
+<body>
+    <header> 
+        <a href="#Header"> <img src="../static/pics/BrorLogo.png" alt="bror logo" > </a>
+        <nav class="nav-links">
+            <a href="#">Om mig</a>
+            <a href="#contact">Kontakt</a>
+            <a href="#">Priser</a>
+        </nav>
+        <div class="menu-icon" onclick="toggleNav()">☰</div>
+    </header>
+    <div id="backpick"><img src="../static/pics/Bror.png" alt="logo"></div>
+    <div id="about">
+        <div id="abouttext"  class="content">Hej og velkommen! Jeg er [Dit Navn], en dedikeret personlig træner med en passion for at hjælpe musikere og kreative sjæle med at opnå deres optimale sundhed og velvære. Som en selvstændig kreativ person forstår jeg de unikke udfordringer og krav, som musikere og kunstnere står over for i deres travle livsstil.
+
+            Mit mål er at skabe skræddersyede træningsprogrammer, der ikke kun styrker din fysiske form, men også støtter din kreative proces. Jeg tror på, at en sund krop og en sund sjæl går hånd i hånd, og at motion kan være en kilde til inspiration og energi.
+            
+            Uanset om du er en musiker på turné, en kunstner i studiet, eller en kreativ person, der ønsker at forbedre dit overordnede velvære, er jeg her for at guide dig. Mine træningsmetoder kombinerer alsidige øvelser med fokus på fleksibilitet, styrke og udholdenhed, skræddersyet til at imødekomme de specifikke behov og krav i din kreative livsstil.
+            
+            Jeg tror på, at træning skal være sjovt og motiverende, og jeg er her for at skabe et støttende og positivt miljø, hvor du kan opnå dine sundheds- og fitnessmål. Lad os sammen skabe et program, der ikke kun forbedrer din fysiske form, men også fremmer din kreativitet og livsglæde.
+            
+            Er du klar til at tage det næste skridt mod en sundere og mere inspirerende livsstil? Lad os begynde rejsen sammen!
+            <div id="socials">
+                <!-- https://www.figma.com/file/WK3tbK0GdHpZ7m2vN7PHxA/Social-Media-Icons-24x24-(Community)?type=design&node-id=0-1&mode=design&t=xTnin0iAyrPUibqC-0-->
+                <div id="instagram" class="social" onclick="redirectToInstagram()"></div>
+                <div id="threads" class="social" onclick="redirectToThreads()"></div>
+                <div id="x" class="social" onclick="redirectToX()"></div>
+                <div id="linked_in" class="social" onclick="redirectToLinkedIn()"></div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" >
+        <div id="offers" class="content">
+            <div id="leftarrow" class="arrow"> &lsaquo; </div>
+            <div id="box1" class="offer">OFFER 2 <br> OFFER 2 <br> OFFER 2 <br> OFFER 2 <br> OFFER 2 <br> </div>
+            <div id="box2" class="offer offerfocus "> OFFER 1 <br> OFFER 1 <br> OFFER 1 <br> OFFER 1 <br> OFFER 1 <br> </div>
+            <div id="box3" class="offer">OFFER 3 <br> OFFER 3 <br> OFFER 3 <br> OFFER 3 <br> OFFER 3 <br> </div>
+            <div id="rightarrow" class="arrow"> &rsaquo;</div>
+        </div>
+        <form id="contactform" class="content">
+            <h1 class="formheader">Kontakt mig</h1>
+    
+            <label for="name" >Navn:</label><br>
+            <input type="text" id="name" class="name" placeholder="Dit fulde navn..." name="name"><br>
+    
+            <label for="E-mail">E-mail:</label><br>
+            <input type="text" id="email" placeholder="Din E-mail..." name="E-mail"><br>
+    
+            <label for="message">Besked:</label><br>
+            <input type="textbox" id="message" placeholder="Hvad tror du jeg kan tilbyde dig?" name="message"><br>
+    
+            <button type="button" id="send" onclick="SendEmail()">Send</button>
+        </form>
+    </div>
+
+    <footer>>Hej og velkommen! Jeg er [Dit Navn], en dedikeret personlig træner med en passion for at hjælpe musikere og kreative sjæle med at opnå deres optimale sundhed og velvære. Som en selvstændig kreativ person forstår jeg de unikke udfordringer og krav, som musikere og kunstnere står over for i deres travle livsstil.
+
+        Mit mål er at skabe skræddersyede træningsprogrammer, der ikke kun styrker din fysiske form, men også støtter din kreative proces. Jeg tror på, at en sund krop og en sund sjæl går hånd i hånd, og at motion kan være en kilde til inspiration og energi.
+        
+        Uanset om du er en musiker på turné, en kunstner i studiet, eller en kreativ person, der ønsker at forbedre dit overordnede velvære, er jeg her for at guide dig. Mine træningsmetoder kombinerer alsidige øvelser med fokus på fleksibilitet, styrke og udholdenhed, skræddersyet til at imødekomme de specifikke behov og krav i din kreative livsstil.
+        
+        Jeg tror på, at træning skal være sjovt og motiverende, og jeg er her for at skabe et støttende og positivt miljø, hvor du kan opnå dine sundheds- og fitnessmål. Lad os sammen skabe et program, der ikke kun forbedrer din fysiske form, men også fremmer din kreativitet og livsglæde.
+        
+        Er du klar til at tage det næste skridt mod en sundere og mere inspirerende livsstil? Lad os begynde rejsen sammen</footer>
+    
+    
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>     
+    <script type="text/javascript">
+        emailjs.init('wd4apaVDXT-Qebbcc')
+    </script>
+    <script src="../static/script.js"></script>
+</body>
+</html>

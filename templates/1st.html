@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/8616e00f10.js' crossorigin='anonymous'></script>
+    <title>Document</title>
+    <style>
+        a:link,a:visited {
+                text-decoration: none;
+                color: black;
+
+        }
+        #header {
+                display: flex;
+                margin: 0px;
+                padding: 10px;
+                justify-content: center;
+                background-color: #e896f0;
+;
+            }
+        #logo{
+                border: 0px solid black;
+            }
+        #overskrift{
+                font-family: Besley;
+                font-size: 60px;
+                margin-left: 450px ;
+                margin-right: 450px;
+            }       
+        img{
+            object-fit: cover;
+        }
+
+        .opslag{
+            background-color: #f5ebdc;
+            width: 700px;
+            border: 2px solid black;
+            margin: auto;
+            margin-bottom:20px;
+            margin-top:20px;
+            padding: 20px;
+        }
+        .titel{
+            font-size: 30px;
+        }
+        .kunstner{
+            font-size: 15px;
+        }
+        .album{
+            font-size: 15px;
+        }
+        .billede{
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5px;
+            width: 90%;
+        }
+        .ikoner{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .ikon{
+            width: 50px;
+        
+        }
+        .beskrivelse{
+            font-size: 15px;
+        }
+        .tidspunkt{
+            font-size: 10px;
+        }
+
+        #krop{
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .kommentar{
+            padding: 10px;
+            border: 1px solid gray;
+        }
+        #tilføj_kommentar{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #kommentarfelt{
+            display: hidden;
+        }
+
+        a:link,a:visited {
+            text-decoration: none;
+
+        }
+        #indhold{
+            padding: 50px;
+            justify-content: center;
+            display: flex;
+            background-color: whitesmoke;
+            height: 1000px;
+        }
+        #opret_kasse{
+            background-color: gray;
+            padding: 30px;
+            width: 380px;
+            position: fixed;
+            
+        }
+        .form{
+            margin-bottom: 10px;
+
+        }
+        .opret_knap{
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #overskriftstyle{
+            color:black;
+        }
+        .kategori{
+            width: 340px;
+        }
+        #beskrivelse{
+            width: 300px;
+            height: 100px;
+        }
+        .open-button {
+            background-color: rgb(231, 190, 221);
+            padding: 16px 20px;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            width: 280px;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 10px;
+            padding: 5px;
+            }
+        .form-container {
+            display: none;
+            position: absolute;
+            right: 72%;
+            left: 5px;
+            top:10px;
+            background-color: beige;
+            }
+        
+        
+        .form{
+            max-width: 90%;
+            padding: 2%;
+            }
+        .form-overskrift{
+            size: 20px;
+        }
+        
+        .kategori{
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            }
+        #footer{
+            background-color: saddlebrown;
+            height: 100px;
+        }
+        #filler{
+            background-color: darkblue;
+            height: 1000px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="logo"><a href="musikprojekt.py"><img src="Musikprojektbilleder\logo.jpg" alt="LOGO" height="100px"></div>
+        <div id="overskrift"><a id="overskriftstyle" href="musikprojekt.py">BeMusic</a></div>
+        <div id="login"><a href="Login.py"><img src="/Musikprojektbilleder\lock1.png" alt="lås" height="100px"></a></div>
+    </div>
+<body id="body">
+    <div id="krop">
+    
+        <button class="open-button" onclick="openForm()">Opret opslag</button>
+            
+        <div class="form-container" id="myForm">
+            <form class="form" action="/Musikprojekt/actionopslag.py">
+                <h1 class="form-overskrift">Nyt opslag</h1>
+        
+                <label for="titel">Titel:</label><br>
+                <input type="text" class="kategori" placeholder="Skriv titel" name="titel"><br>
+        
+                <label for="kunstner">Kunstner:</label><br>
+                <input type="text" class="kategori" placeholder="Skriv kunstner" name="kunstner"><br>
+        
+                <label for="album">Album:</label><br>
+                <input type="text" class="kategori" placeholder="Skriv album" name="album"><br>
+        
+                <label for="beskrivelse">Beskrivelse:</label><br>
+                <input type="text" class="kategori"placeholder="Skriv beskrivelse"><br>
+        
+                <label for="billede">Billede:</label><br>
+                <input type="text" class="kategori" placeholder="Billedenavnet"><br>
+        
+                <input class="opret_knap" type="submit" value="Opret opslag">
+                <button type="button" class="luk form" onclick="closeForm()">Luk</button>
+            </form>
+        </div>
+        <div id="filler">
+
+        </div>
+    </div>
+    <div id="footer">Heyo</div>
+    
+    <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+
+         
+    <script>
+    function myFunction(id) {
+        var x = document.getElementById("kommentarfelt" + id);
+        if (x.style.display === "none") {
+        x.style.display = "block";
+        } else {
+        x.style.display = "none";
+        }
+    }
+    </script>
+    </div>
+
+
+</body>
+
+</html>
