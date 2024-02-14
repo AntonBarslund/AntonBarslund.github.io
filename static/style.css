@@ -70,7 +70,6 @@ header img{
 
 }
 .content{
-    width: 40%;
     height: auto;
     text-align: center;
     font-size: 20px;
@@ -214,7 +213,6 @@ header img{
 }
 
 #contactform{
-
     width: 500px;
     letter-spacing: 3px;
 }
@@ -276,21 +274,57 @@ footer{
     }
     .menu-icon {
         display: block;
+        padding: 0;
     }
-    .segment{
-        padding: auto;
-        flex-direction: column;  
+    #about{
+        width: auto;
+        height: auto;
+    }
+    header{
+        width: 100%;
+    }
+    header img{
+        padding: 0;
+        transform: scale(0.9);
+        background-color: floralwhite;
+    }
+    #socials{
+        padding: 0;
+    }
+    #offers{
+        height: auto;
+        box-sizing: border-box; /* Ensure padding is included in width */
+        width: 98%;
+        font-size: auto;
+    }
+    .offerheader{
+        font-size: 20px;
+    }
+    .offertext{
+        font-size: 10px;
+    }
+    .offerprice{
+        font-size: 10px;
+
+    }
+    .offerdescription{
+        font-size: 10px;
     }
     #contact{
-        margin-top: 20px;
-        margin: 20px auto auto auto;
+        width: 100% ;
     }
+    #contactform{
+        width: auto;
+    }
+
 
 }
 
 @media screen and (max-width: 1350px){
-    #contact, #offers, #about{
-        margin-top: 20px;
+    #about, #offers, #contact{
+        margin: auto;
+    }
+    #contact{
         margin: 20px auto auto auto;
     }
 }
