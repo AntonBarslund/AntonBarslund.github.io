@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/style3.css">
+    <link rel="stylesheet" type="text/css" href="../static/style copy.css">
     <title>Bror Bruland</title>
 </head>
 
@@ -36,7 +37,22 @@
             <div id="x" class="social" onclick="redirectToX()"></div>
             <div id="linked_in" class="social" onclick="redirectToLinkedIn()"></div>
         </div>
-        </div>    
+        </div>
+        <div id="replace_pic1" class="replace_pic"></div>    
+    </div>
+    <div class="segment third">
+        <div class="comment_header"> <h1>simply review</h1> </div>
+        <div class="comments">
+            <div class="comment"></div>
+            <div class="comment"></div>
+            <div class="comment"></div>
+            <div class="comment"></div>
+            <div class="comment"></div>
+            <div class="comment"></div>
+            <div class="comment"></div>
+            <div class="comment"></div>
+            <div class="comment"></div>
+        </div>   
     </div>   
     <div class="segment second">
         <div id="offers" class="content">
@@ -63,18 +79,28 @@
         </div>
         <div id="contact">
             <form id="contactform" class="content">
-                <h1 class="formheader">Kontakt mig</h1>
-        
-                <label for="name" >Navn:</label><br>
-                <input type="text" id="name" class="name" placeholder="Dit fulde navn..." name="name"><br>
-        
-                <label for="E-mail">E-mail:</label><br>
-                <input type="text" id="email" placeholder="Din E-mail..." name="E-mail"><br>
-        
-                <label for="message">Besked:</label><br>
-                <input type="textbox" id="message" placeholder="Hvad tror du jeg kan tilbyde dig?" name="message"><br>
-        
-                <button type="button" id="send" onclick="SendEmail()">Send</button>
+                <div class="app-title">
+                    <span>KONTAKT</span>
+                    <span>MIG</span>
+                  </div>
+                  <div class="app-form">
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="NAME" value="Krisantus Wanandi">
+                    </div>
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="EMAIL">
+                    </div>
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="CONTACT NO">
+                    </div>
+                    <div class="app-form-group message">
+                      <input class="app-form-control" placeholder="MESSAGE">
+                    </div>
+                    <div class="app-form-group buttons">
+                      <button class="app-form-button">CANCEL</button>
+                      <button class="app-form-button">SEND</button>
+                    </div>
+                  </div>
             </form>
         </div>
     </div> 
