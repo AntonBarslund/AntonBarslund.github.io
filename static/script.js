@@ -125,6 +125,8 @@ document.getElementById('contactform').addEventListener('submit', function(event
             alert(JSON.stringify(err));
     });
 
+    btn.textContent = "Sendt";
+
 
   });
 
