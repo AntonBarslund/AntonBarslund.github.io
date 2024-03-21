@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(7, 41, 27);
+    font-size: 20px;
+}
+
+#offset{
+    width: 100%;
+    height: 120px;
+    background-color: none;
+}
+
+.ha1{
+    padding: 80px;
+    display: flex;
+}
+
+#ha1txt{
+    width: 40%;
+}
+li{
+    margin: 10px;
+}
+
+#ha1form{
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+    height: 100%;
+}
+
+.dropdown{
+    background: rgb(3, 16, 11);
+  }
+
+
+
+@media screen and (max-width: 1200px) {
+    .ha1{
+        display: block;
+        padding: 10px;
+    }
+    #ha1form{
+        width: auto;
+        justify-content: start;
+    }
+    #ha1txt{
+        padding: 0 30px;
+    }
+
+}

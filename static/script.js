@@ -24,23 +24,15 @@ function executeScript() {
 }
 
 window.addEventListener('scroll', function() {
-    const BackPicImg = document.getElementById("backpick");
-    const HeaderHeight = document.querySelector('header').offsetHeight;
-    const FooterHeight = document.querySelector('footer').offsetHeight;
-    const BackPicImgHeight = BackPicImg.clientHeight
-    const SiteHeight = document.body.scrollHeight;
     
-
-    if (window.scrollY < HeaderHeight) {
-        //if header visible
-        BackPicImg.style.top = HeaderHeight - window.scrollY + "px";
-    } else if (window.scrollY + window.innerHeight + FooterHeight >= SiteHeight ){
-        //if footer visibe
-        BackPicImg.style.top = SiteHeight - FooterHeight - BackPicImgHeight - window.scrollY + "px";
+    Header.style.height = "2000px";
+    
+    if (window.scrollY > 45) {
+        Header.style.height = "75px";
     } else {
-        // if none visible
-        BackPicImg.style.top = "0";
+        Header.style.height = 120 - this.window.scrollY + "px";
     }
+
   });
 
 function toggleNav() {
@@ -49,6 +41,7 @@ function toggleNav() {
 }
 
 function redirectToInstagram() {
+
     // Change the Instagram URL to your actual Instagram profile URL
     window.open("https://www.instagram.com/brorbruland/", '_blank');
 }
@@ -124,3 +117,17 @@ document.getElementById('rightarrow').addEventListener('click', function () {
     updateFocus();
 });
 
+
+function setMessage() {
+    
+    var previous = document.getElementById('previous');
+    if (window.innerWidth > 1000) {
+        previous.innerText = 'Hello';
+    } else {
+        previous.innerText = 'Hey';
+    }
+  }
+  
+// Call setMessage function when the page loads and on resize
+window.onload = setMessage;
+window.onresize = setMessage;

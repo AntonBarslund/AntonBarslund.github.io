@@ -1,75 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scrollable Divs with Thinner Scrollbar</title>
+<style>
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  overflow-x: scroll;
+}
 
-        .container {
-            display: flex;
-            align-items: center;
-        }
 
-        .box {
-            width: 100px;
-            height: 100px;
-            margin: 10px;
-            border: 2px solid #333;
-            box-sizing: border-box;
-            transition: transform 0.3s;
-        }
+.slide {
+  display: block;
+  margin: 0 15px;
+}
 
-        .focused {
-            transform: scale(1.2); /* Increase the size when focused */
-            border-color: #ff6600; /* Change border color when focused */
-        }
+.slide img {
+  height: 400px;
+}
 
-        .arrow {
-            font-size: 24px;
-            cursor: pointer;
-            margin: 0 10px;
-        }
-    </style>
+
+
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="arrow" id="prev">&lt;</div>
-        <div class="box" id="box1"></div>
-        <div class="box focused" id="box2"></div>
-        <div class="box" id="box3"></div>
-        <div class="arrow" id="next">&gt;</div>
-    </div>
-
-    <script>
-        // JavaScript to navigate through boxes
-        const boxes = document.querySelectorAll('.box');
-        let currentIndex = 1; // Index of the focused box
-
-        function updateFocus() {
-            boxes.forEach((box, index) => {
-                box.classList.toggle('focused', index === currentIndex);
-            });
-        }
-
-        document.getElementById('prev').addEventListener('click', function () {
-            currentIndex = Math.max(0, currentIndex - 1);
-            updateFocus();
-        });
-
-        document.getElementById('next').addEventListener('click', function () {
-            currentIndex = Math.min(boxes.length - 1, currentIndex + 1);
-            updateFocus();
-        });
-    </script>
+    <div class="slideshow-container">
+        <div class="slide">
+          <img src="../static/pics/Bror_2.png" alt="Slide 1">
+        </div>
+        <div class="slide">
+          <img src="../static/pics/Bror_3.jpg" alt="Slide 2">
+        </div>
+        <div class="slide">
+          <img src="../static/pics/Bror_4.jpg" alt="Slide 3">
+        </div>
+      </div>
+      
 </body>
+<script>
+
+
+</script>
 </html>
