@@ -63,16 +63,16 @@
                       </div>
                       <div class="app-form">
                         <div class="app-form-group">
-                          <input class="app-form-control" placeholder="Navn" >
+                          <input class="app-form-control" name="name" id="name" placeholder="Navn" >
                         </div>
                         <div class="app-form-group">
-                          <input class="app-form-control" placeholder="E-mail">
+                          <input class="app-form-control" name="email" id="email" placeholder="E-mail">
                         </div>
                         <div class="app-form-group">
-                          <input class="app-form-control" placeholder="Telefon nr.">
+                          <input class="app-form-control" name="phonenr" id="phonenr" placeholder="Telefon nr.">
                         </div>
                         <div class="app-form-group">
-                            <select name="languages" id="lang" class="app-form-control dropdown">
+                            <select name="languages" name="course" id="course" class="app-form-control dropdown">
                                 <option value="placeholder">Hvilket forløb</option>
                                 <option value="TP">Transformation Package</option>
                                 <option value="BBP">Buddy Boost Program</option>
@@ -80,11 +80,11 @@
                               </select>
                         </div>
     
-                        <div class="app-form-group message">
-                          <input class="app-form-control" placeholder="Besked f.eks. erfaring, eller lidt om hvem du er">
+                        <div class="app-form-group message" >
+                          <input class="app-form-control" name="message" id="message" placeholder="Besked f.eks. erfaring, eller lidt om hvem du er">
                         </div>
                         <div class="app-form-group buttons">
-                          <button class="app-form-button">SEND</button>
+                          <button type="submit" class="app-form-button" id="send">SEND</button>
                         </div>
                       </div>
                 </form>
@@ -108,5 +108,12 @@
     </footer>
     
 </body>
-<script src="../static/script.js"></script>
+<script src="../static/Handelsbetingelser.js"></script>
+
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>     
+<script type="text/javascript">
+    emailjs.init('wd4apaVDXT-Qebbcc')
+</script>
 </html>

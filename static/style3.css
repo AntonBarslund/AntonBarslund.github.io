@@ -148,3 +148,7 @@
   .app-form-button:hover {
     color: #b9134f;
   }
+
+  button[type=submit]{
+    background-color: #e8e925;
+  }

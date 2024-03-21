@@ -24,7 +24,7 @@ function executeScript() {
 }
 
 window.addEventListener('scroll', function() {
-    
+    const Header = document.querySelector('header');
     Header.style.height = "2000px";
     
     if (window.scrollY > 45) {
@@ -61,31 +61,62 @@ function redirectToLinkedIn() {
     window.open("https://dk.linkedin.com/in/bror-bruland-4528ab221", '_blank');
 }
 
-function SendEmail() {
-    //email.js
-    // default mail set in email.js
+
+
+
+
+document.getElementById('contactform').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents the default form submission behavior
+    
 
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
+    const phoneNr = document.getElementById('phonenr');
+    const courseInput = document.getElementById('course');
     const messageInput = document.getElementById('message');
     const btn = document.getElementById('send');
 
+
+    
     const name = nameInput.value;
     const email = emailInput.value;
+    const phone = phoneNr.value;
+    const course = courseInput.value;
     const message = messageInput.value;
 
-    if (!name || !email || !message) {
+    console.log(name, email, phone, course, message);
+
+    if (!name || !email || !message || !phone) {
         alert('Please fill in all required fields.');
         return;
     }
+    if (course === "placeholder"){
+        alert("vælg forløb")
+    }
+
+    //email.js
+    // default mail set in email.js
 
     const serviceID = 'default_service';
     const templateID = 'template_ghk032p';
 
-    document.getElementById('contactform')
     btn.textContent = "Sending...";
 
-    emailjs.sendForm(serviceID, templateID, contactform)
+    var selectedOption = document.getElementById("course").value;
+
+    var contactform = {
+        name: name,
+        email: email,
+        phone: phone,
+        course: selectedOption,
+        message: message,
+      };
+
+    console.log(contactform);
+
+
+
+    emailjs.send(serviceID, templateID, contactform)
         .then(() => {
             btn.value = 'Send Email';
             alert('Sent!');
@@ -93,7 +124,9 @@ function SendEmail() {
             btn.value = 'Send Email';
             alert(JSON.stringify(err));
     });
-}
+
+
+  });
 
 // JavaScript to navigate through boxes
 const boxes = document.querySelectorAll('.offer');
@@ -118,16 +151,4 @@ document.getElementById('rightarrow').addEventListener('click', function () {
 });
 
 
-function setMessage() {
-    
-    var previous = document.getElementById('previous');
-    if (window.innerWidth > 1000) {
-        previous.innerText = 'Hello';
-    } else {
-        previous.innerText = 'Hey';
-    }
-  }
   
-// Call setMessage function when the page loads and on resize
-window.onload = setMessage;
-window.onresize = setMessage;
