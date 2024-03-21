@@ -1,10 +1,7 @@
-from flask import Flask, render_template, request, jsonify
-from openai import OpenAI
-import subprocess
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-client = OpenAI()
 
 @app.route('/')
 def index():
