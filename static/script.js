@@ -25,12 +25,15 @@ function executeScript() {
 
 window.addEventListener('scroll', function() {
     const Header = document.querySelector('header');
+    const navBox = document.querySelector('.nav-links.show');
     Header.style.height = "2000px";
     
     if (window.scrollY > 45) {
         Header.style.height = "75px";
+        navBox.style.top = "75px";
     } else {
         Header.style.height = 120 - this.window.scrollY + "px";
+        navBox.style.top = 120 - this.window.scrollY + "px";
     }
 
   });
