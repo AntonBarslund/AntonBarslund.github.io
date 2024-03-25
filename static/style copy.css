@@ -28,8 +28,6 @@ header{
 }
 header img{
     margin-left: 50px;
-    margin: 5px;
-    box-shadow: 10px 20px 50px rgba(60, 60, 60, 0.4);
 }
 .nav-links {
     z-index: 12;
