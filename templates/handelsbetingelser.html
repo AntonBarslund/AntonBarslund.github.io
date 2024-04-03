@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../static/style copy.css">
-    <link rel="stylesheet" type="text/css" href="../static/style3.css">
+    <link rel="stylesheet" type="text/css" href="../static/final.css">
     <link rel="stylesheet" type="text/css" href="../static/Handelsbetingelser.css">
     <title>Handelsbetingelser</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,18 +12,20 @@
 </head>
 <body>
     <header> 
-        <a href="#"> <img src="../static/pics/BrorLogo.png" alt="bror logo" > </a>
+        <div id="headerimg"></div>
+        
         <nav class="nav-links">
-            <a onclick="toggleNav()" href="#">OM MIG</a>
-            <a onclick="toggleNav()" href="#contact">KONTAKT</a>
-            <a onclick="toggleNav()" href="#">PRISER</a>
+            <a href="#">OM MIG</a>
+            <a href="#contact">KONTAKT</a>
+            <a href="#">PRISER</a>
         </nav>
         <div class="menu-icon" onclick="toggleNav()">☰</div>
     </header>
-    <div id="offset"></div>
 
     <div class="segment ha1">
         <div id="ha1txt">
+            <a href="final.html"><div id="halogo"></div></a>
+            
             <div class="textbox">
                 <span><h1>Handelsbetingelser</h1></span>
                 <ul>
@@ -56,37 +57,42 @@
         </div>
         <div id="ha1form">
             <div id="contact">
-                <form id="contactform" class="content">
-                    <div class="app-title">
-                        <span>KONTAKT</span>
-                        <span>MIG</span>
-                      </div>
-                      <div class="app-form">
-                        <div class="app-form-group">
-                          <input class="app-form-control" name="name" id="name" placeholder="Navn" >
-                        </div>
-                        <div class="app-form-group">
-                          <input class="app-form-control" name="email" id="email" placeholder="E-mail">
-                        </div>
-                        <div class="app-form-group">
-                          <input class="app-form-control" name="phonenr" id="phonenr" placeholder="Telefon nr.">
-                        </div>
-                        <div class="app-form-group">
-                            <select name="languages" name="course" id="course" class="app-form-control dropdown">
-                                <option value="placeholder">Hvilket forløb</option>
-                                <option value="TP">Transformation Package</option>
-                                <option value="BBP">Buddy Boost Program</option>
-                                <option value="EFG">Express Fitness Blitz</option>
-                              </select>
-                        </div>
+                <div id="formheader">KONTAKT MIG</div>
+                <form id="contactme">
+                    <div id="formname" class="formrow">
+                        <input name="firstname" id="firstname" placeholder="FORNAVN">
+                        <input name="surename" id="surename" placeholder="EFTERNAVN">
+                    </div>
+                    <div class="formrow">
+                        <input name="email" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="formrow">
+                        <input name="phonenr" id="phonenr" placeholder="Telefon nr.">
+                    </div>
+                    <div class="formrow">  
+                        <select name="course" id="course" >
+                            <option value="placeholder">Hvilket forløb</option>
+                            <option value="Online">Online</option>
+                            <option value="Offline">Offline</option>
+                          </select>
+                    </div>
+                    <div class="formrow">
+                        <select name="experience" id="experience" >
+                            <option value="placeholder">Erfaring</option>
+                            <option value="beginner">0 - 2 år (begynder)</option>
+                            <option value="intermediate">2 - 4 (øvet)</option>
+                            <option value="advanced">4+ år (trænet)</option>
+                          </select>
+                    </div>
+                    <div class="formrow">
+                        <input type="text" name="message" id="message" placeholder="Besked f.eks. erfaring, eller lidt om hvem du er">
+                    </div>
+                    <div class="formrow">
+                        <button type="submit" class="app-form-button" id="signup">Skriv dig op</button>
+                    </div>
     
-                        <div class="app-form-group message" >
-                          <input class="app-form-control" name="message" id="message" placeholder="Besked f.eks. erfaring, eller lidt om hvem du er">
-                        </div>
-                        <div class="app-form-group buttons">
-                          <button type="submit" class="app-form-button" id="send">SEND</button>
-                        </div>
-                      </div>
+    
+                    
                 </form>
             </div>
         </div>
@@ -94,11 +100,10 @@
     </div>
     <footer>
         <div id="footerlinks">
-            <div class="footerlink"><a href="../templates/handelsbetingelser.html">Handelsbetingelser</a></div>
+            <div class="footerlink"><a href="handelsbetingelser.html">Handelsbetingelser</a></div>
             <div class="footerlink"></div>
             <div class="footerlink">© Bruland creative performance</div>
             <div class="footerlink">All Rights Reserved. CVR: 43834223</div>
-            <div class="footerlink"><a href="">Created by Anton Barslund</a></div>
         </div>
         <div id="footercontacts">
             <div id="instagram" class="social" onclick="redirectToInstagram()"></div>
@@ -109,7 +114,7 @@
     </footer>
     
 </body>
-<script src="../static/Handelsbetingelser.js"></script>
+<script src="../static/final.js"></script>
 
 <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">

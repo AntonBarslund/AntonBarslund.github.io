@@ -1,7 +1,6 @@
 html {
     scroll-behavior:smooth;
   }
-
 body {
     margin: 0%;
     font-family: "Roboto Condensed", sans-serif;
@@ -27,11 +26,14 @@ header{
     z-index: 2;
 }
 header img{
-    margin-left: 50px;
+    display: none;
+    margin-top: 100px;
+    margin-left: 650px;
 }
 .nav-links {
     z-index: 12;
     display: flex;
+    
     
 }
 .nav-links a {
@@ -40,6 +42,9 @@ header img{
     padding: 0 20px;
 }
 .menu-icon {
+    position: relative;
+    top:  -15px;
+    height: auto;
     display: none;
     font-size: 2em;
     cursor: pointer;
@@ -130,7 +135,7 @@ header img{
     background-color: rgb(178, 160, 145);
 }
 .third{
-    display: none;
+    display: block;
     background-color: rgb(7, 41, 27);
     padding: 50px 20%;
     justify-content: center;
@@ -323,7 +328,7 @@ header img{
 }
 #contact{
     width: 800;
-    height: 100%;
+    height: auto;
     display: flex;
     align-items: center;
 }
@@ -354,8 +359,7 @@ footer{
 }
 #footerlinks{
     height: auto;
-    width: 50%;
-    padding: 15px;
+    padding: 15px auto;
 }
 .footerlink{
     height: 20px;
@@ -423,9 +427,8 @@ footer{
         width: 100%;
     }
     header img{
+        margin: 40px 10px;
         padding: 0;
-        transform: scale(0.9);
-        background-color: floralwhite;
     }
     #socials{
         padding: 0;
