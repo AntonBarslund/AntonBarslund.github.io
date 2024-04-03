@@ -3,153 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="static/style3.css">
-    <link rel="stylesheet" type="text/css" href="static/style copy.css">
+    <link rel="stylesheet" type="text/css" href="static/final.css">
     <title>Bror Bruland</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
 </head>
-
 <body>
     <header> 
-        <a href="#"> <img src="static/pics/brulandcreative_1200_web.png" alt="bror logo" > </a>
+        <a href="#Header"> <img src="" alt="" > </a>
         <nav class="nav-links">
-            <a href="#">OM MIG</a>
+            <a href="#about">OM MIG</a>
             <a href="#contact">KONTAKT</a>
-            <a href="#offers">PRISER</a>
+            <a href="#courses">PRISER</a>
         </nav>
         <div class="menu-icon" onclick="toggleNav()">☰</div>
     </header>
-
-    <div class="segment first">
-        <div id="atext">
-
-            <div id="about" class="content">
-                <h1>Hej og velkommen!</h1>
-                Jeg hedder Bror Bruland, en dedikeret personlig træner med fokus på at hjælpe musikere og kreative sjæle med at nå deres optimale sundhed og velvære. Jeg forstår de unikke udfordringer, som musikere og kunstnere står over for i deres travle livsstil.
-                Mit mål er at skabe skræddersyede træningsprogrammer, der ikke kun styrker din fysiske form, men også understøtter din kreative proces. Jeg tror på, at en sund krop og en sund sjæl går hånd i hånd, og at motion kan være en kilde til inspiration og energi.
-                Jeg tror på, at træning skal være sjovt og motiverende, og jeg er her for at skabe et støttende og positivt miljø, hvor du kan opnå dine sundheds- og fitnessmål. Lad os sammen skabe et program, der ikke kun forbedrer din fysiske form, men også fremmer din kreativitet og livsglæde.
-                Er du klar til at tage det næste skridt mod en sundere og mere inspirerende livsstil? Lad os begynde rejsen sammen.
-                <div id="socials">
-                    <!-- https://www.figma.com/file/WK3tbK0GdHpZ7m2vN7PHxA/Social-Media-Icons-24x24-(Community)?type=design&node-id=0-1&mode=design&t=xTnin0iAyrPUibqC-0-->
-                    <div id="instagram" class="social" onclick="redirectToInstagram()"></div>
-                    <div id="threads" class="social" onclick="redirectToThreads()"></div>
-                    <div id="x" class="social" onclick="redirectToX()"></div>
-                    <div id="linked_in" class="social" onclick="redirectToLinkedIn()"></div>
+    <div id="welcome" class="segment">
+        <div class="apic"></div>
+        <div class="atext">
+            <div id="logo"></div>
+            <div id="quotes">
+                <div id="quote1" class="quote" > 
+                    Mit forløb med Bror har været en kæmpe øjenåbner og oplevelse, og jeg kan på det varmeste anbefale Bror som personlig træner.”  <br> - GLAAAAD KUNDE
                 </div>
-            </div>
-        </div>
-        <div id="apic"></div>
-    </div>
-
-    <div class="segment fifth">
-        <div id="about" class="content">
-            <h1>Hej og velkommen!</h1>
-            Jeg hedder Bror Bruland, en dedikeret personlig træner med fokus på at hjælpe musikere og kreative sjæle med at nå deres optimale sundhed og velvære. Jeg forstår de unikke udfordringer, som musikere og kunstnere står over for i deres travle livsstil.
-            Mit mål er at skabe skræddersyede træningsprogrammer, der ikke kun styrker din fysiske form, men også understøtter din kreative proces. Jeg tror på, at en sund krop og en sund sjæl går hånd i hånd, og at motion kan være en kilde til inspiration og energi.
-            Jeg tror på, at træning skal være sjovt og motiverende, og jeg er her for at skabe et støttende og positivt miljø, hvor du kan opnå dine sundheds- og fitnessmål. Lad os sammen skabe et program, der ikke kun forbedrer din fysiske form, men også fremmer din kreativitet og livsglæde.
-            Er du klar til at tage det næste skridt mod en sundere og mere inspirerende livsstil? Lad os begynde rejsen sammen.
-            <div id="socials">
-                <!-- https://www.figma.com/file/WK3tbK0GdHpZ7m2vN7PHxA/Social-Media-Icons-24x24-(Community)?type=design&node-id=0-1&mode=design&t=xTnin0iAyrPUibqC-0-->
-                <div id="instagram" class="social" onclick="redirectToInstagram()"></div>
-                <div id="threads" class="social" onclick="redirectToThreads()"></div>
-                <div id="x" class="social" onclick="redirectToX()"></div>
-                <div id="linked_in" class="social" onclick="redirectToLinkedIn()"></div>
+                <div id="quote2" class="quote" > 
+                    Alt i alt er dette forløb noget som jeg ser tilbage på med både glæde og fornøjelse. Træning har fået en helt anden betydning for mig og jeg kan endeligt se mig selv gå i fitness fast som en del af min ugentlige rutine. <br> Mange tak! <br> - Noah
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="segment fourth">
-        <div id="offers" class="content">
-            <div id="offerheader">FORLØBSFORSLAG</div>
-            <div class="offer-div">
-                <div id="leftarrow" class="arrow"> &lsaquo; </div>
-                <div id="box1" class="offer">
-                    <div class="offertitle">Transformation Package</div>
-                    <div class="offerdescription">Comprehensive fitness journey with personalized plans and weekly assessments.</div>
-                    <div class="offertext">Embark on a holistic fitness journey with our Transformation Package. This comprehensive program includes personalized workout plans, nutrition guidance, and weekly progress assessments. As part of this offer, you'll receive one-on-one training sessions tailored to your fitness goals. We'll track your progress, adjust the program as needed, and provide ongoing support to ensure you achieve the transformation you desire.</div>
-                    <div class="offerprice">$499/month </div>
-                </div>
-                <div id="box2" class="offer offerfocus">
-                    <div class="offertitle">Buddy Boost Program</div>
-                    <div class="offerdescription">Partner up for joint training sessions with a friend.</div>
-                    <div class="offertext">Get fit with a friend and enjoy the benefits of our Buddy Boost Program. This offer is designed for pairs who want to share the fitness journey together. You and your workout partner will receive joint training sessions, creating a supportive and motivating environment. Whether you have similar fitness goals or individual objectives, our trainer will customize workouts to meet your needs.</div>
-                    <div class="offerprice"> $799/month </div>
-                </div>
-                <div id="box3" class="offer">
-                    <div class="offertitle">Express Fitness Blitz</div>
-                    <div class="offerdescription"> Intense 30-minute sessions for those with busy schedules.</div>
-                    <div class="offertext">Short on time but committed to fitness? Our Express Fitness Blitz is the perfect solution. This offer is tailored for individuals with busy schedules who still want effective workouts. Enjoy 30-minute intense training sessions focusing on high-impact exercises to maximize results in minimal time. With a flexible schedule, you can squeeze in your workouts during lunch breaks or before heading to the office.</div>
-                    <div class="offerprice">$299/month </div>
-                </div>
-                <div id="rightarrow" class="arrow"> &rsaquo;</div>
-            </div>
+    <div id="about" class="segment">
+        <div id="bheader">OM MIG</div>
+        <div id="btext">
+            Hos Bruland Creative Performance er vores mission at fremme den fysiske såvel som mentale sundhed i den danske musikbranche gennem fysisk aktivitet og personlig træning. Gennem fysisk træning og læring om denne, forsøger vi at gøre musikere og folk i den kreative branche, stærkere og klogere på styrketræning.
         </div>
-        
-    </div> 
+    </div>
 
-    <div class="segment second">
-        <div id="bpic"></div>
-        <div id="contact">
-            <form id="contactform" class="content">
-                <div class="app-title">
-                    <span>KONTAKT</span>
-                    <span>MIG</span>
-                  </div>
-                  <div class="app-form">
-                    <div class="app-form-group">
-                      <input class="app-form-control" name="name" id="name" placeholder="Navn" >
+    <div id="courses" >
+        <div id="cprices">
+            <div id="pricesheader">FORLØB</div>
+            <div id="pricescontent">
+                <div id="online" class="price">
+                    <div class="priceheader"> ONLINE</div>
+                    <div class="pricebullets"> 
+                        <div class="bullet">
+                            <div class="bulletlogo">&#x2713</div>
+                            <div class="bullettext">Træningsprogram & Plan med udgangspunkt i individuelle målsætninger</div>
+                        </div>
+                        <div class="bullet">
+                            <div class="bulletlogo">&#x2713</div>
+                            <div class="bullettext">Ugentlig Check-In m. video & teknisk feedback a’ 20 min varighed</div>
+                        </div>
+                        <div class="bullet">
+                            <div class="bulletlogo">&#x2713</div>
+                            <div class="bullettext">Besvarelse af spørgsmål indenfor 24-timer
+                            </div>
+                        </div>
+                        <div class="bullet">
+                            <div class="bulletlogo">&#x2713</div>
+                            <div class="bullettext">Vejledning & coaching i kost, vaner & makroernæring</div>
+                        </div>
+                        <div class="bullet">
+                            <div class="bulletlogo">&#x2713</div>
+                            <div class="bullettext">Tonsvis af viden indenfor træning, kost & no bullshit</div>
+                        </div>
+                        <div class="bullet">
+                            <div class="bulletlogo">&#x2713</div>
+                            <div class="bullettext">Mulighed for tilkøb af fysiske sessioner</div>
+                        </div>
+                        <div class="bullet">
+                            <div class="bulletlogo">&#x2713</div>
+                            <div class="bullettext"> Ingen binding & ingen opstartsgebyr</div>
+                        </div>
                     </div>
-                    <div class="app-form-group">
-                      <input class="app-form-control" name="email" id="email" placeholder="E-mail">
+                    <div class="priceprice">1400,-/md. </div>
+                </div>
+                <div id="offline" class="price">
+                    <div class="priceheader"> OFFLINE</div>
+                    <div class="pricebullets"> 
+                        <div class="bullet">
+                            <div class="bulletlogo">&#x2713</div>
+                            <div class="bullettext">Træningsprogram & Plan med udgangspunkt i individuelle målsætninger</div>
+                        </div>
+                        <div class="bullet">
+                            <div class="bulletlogo">&#x2713</div>
+                            <div class="bullettext">Ugentlig Check-In m. video & teknisk feedback a’ 20 min varighed</div>
+                        </div>
+                        <div class="bullet">
+                            <div class="bulletlogo">&#x2713</div>
+                            <div class="bullettext">Besvarelse af spørgsmål indenfor 24-timer
+                            </div>
+                        </div>
+                        <div class="bullet">
+                            <div class="bulletlogo">&#x2713</div>
+                            <div class="bullettext">Vejledning & coaching i kost, vaner & makroernæring</div>
+                        </div>
+                        <div class="bullet">
+                            <div class="bulletlogo">&#x2713</div>
+                            <div class="bullettext">Tonsvis af viden indenfor træning, kost & no bullshit</div>
+                        </div>
+                        <div class="bullet">
+                            <div class="bulletlogo">&#x2713</div>
+                            <div class="bullettext">Mulighed for tilkøb af fysiske sessioner</div>
+                        </div>
+                        <div class="bullet">
+                            <div class="bulletlogo">&#x2713</div>
+                            <div class="bullettext"> Ingen binding & ingen opstartsgebyr</div>
+                        </div>
                     </div>
-                    <div class="app-form-group">
-                      <input class="app-form-control" name="phonenr" id="phonenr" placeholder="Telefon nr.">
-                    </div>
-                    <div class="app-form-group">
-                        <select name="languages" name="course" id="course" class="app-form-control dropdown">
-                            <option value="placeholder">Hvilket forløb</option>
-                            <option value="TP">Transformation Package</option>
-                            <option value="BBP">Buddy Boost Program</option>
-                            <option value="EFG">Express Fitness Blitz</option>
-                          </select>
-                    </div>
+                    <div class="priceprice">1400,-/md. </div>
+                </div>   
+            </div>
+       
+        </div>
+        <div id="cpic"></div>
 
-                    <div class="app-form-group message" >
-                      <input class="app-form-control" name="message" id="message" placeholder="Besked f.eks. erfaring, eller lidt om hvem du er">
-                    </div>
-                    <div class="app-form-group buttons">
-                      <button type="submit" class="app-form-button" id="send">SEND</button>
-                    </div>
-                  </div>
+    </div>
+
+    <div id="socialmedia" class="segment">
+        <div id="dheader">MINE SOCIALE MEDIER</div>
+        <div id="dsocials">
+            <div id="instagram" class="social" onclick="redirectToInstagram()"></div>
+            <div id="threads" class="social" onclick="redirectToThreads()"></div>
+            <div id="x" class="social" onclick="redirectToX()"></div>
+            <div id="linked_in" class="social" onclick="redirectToLinkedIn()"></div>
+        </div>
+        <div id="dorelse"> ELLER KONTAKT HERUNDER</div>
+    </div>
+
+    <div id="contact" class="segment">
+        <div id="epic"></div>
+        <div id="eform">
+            <div id="formheader">KONTAKT MIG</div>
+            <form id="contactme">
+                <div id="formname" class="formrow">
+                    <input name="firstname" id="firstname" placeholder="FORNAVN">
+                    <input name="surename" id="surename" placeholder="EFTERNAVN">
+                </div>
+                <div class="formrow">
+                    <input name="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="formrow">
+                    <input name="phonenr" id="phonenr" placeholder="Telefon nr.">
+                </div>
+                <div class="formrow">  
+                    <select name="course" id="course" >
+                        <option value="placeholder">Hvilket forløb</option>
+                        <option value="Online">Online</option>
+                        <option value="Offline">Offline</option>
+                      </select>
+                </div>
+                <div class="formrow">
+                    <select name="experience" id="experience" >
+                        <option value="placeholder">Erfaring</option>
+                        <option value="beginner">0 - 2 år (begynder)</option>
+                        <option value="intermediate">2 - 4 (øvet)</option>
+                        <option value="advanced">4+ år (trænet)</option>
+                      </select>
+                </div>
+                <div class="formrow">
+                    <input type="text" name="message" id="message" placeholder="Besked f.eks. erfaring, eller lidt om hvem du er">
+                </div>
+                <div class="formrow">
+                    <button type="submit" class="app-form-button" id="signup">Skriv dig op</button>
+                </div>
+
+
+                
             </form>
         </div>
-        
     </div>
 
-    <div class="segment third">
-        <div class="comment_header"> <h1>simply review</h1> </div>
-        <div class="comments">
-            <div class="comment"></div>
-            <div class="comment"></div>
-            <div class="comment"></div>
-            <div class="comment"></div>
-            <div class="comment"></div>
-            <div class="comment"></div>
-            <div class="comment"></div>
-            <div class="comment"></div>
-            <div class="comment"></div>
-        </div>   
-    </div>
-    
     <footer>
         <div id="footerlinks">
-            <div class="footerlink"><a href="handelsbetingelser.html">Handelsbetingelser</a></div>
+            <div class="footerlink"><a href="templates/handelsbetingelser.html">Handelsbetingelser</a></div>
             <div class="footerlink"></div>
             <div class="footerlink">© Bruland creative performance</div>
             <div class="footerlink">All Rights Reserved. CVR: 43834223</div>
-            <div class="footerlink"><a href="">Created by Anton Barslund</a></div>
         </div>
         <div id="footercontacts">
             <div id="instagram" class="social" onclick="redirectToInstagram()"></div>
@@ -160,11 +192,12 @@
     </footer>
     
 </body>
-<script src="static/script.js"></script>
+<script src="static/final.js"></script>
 <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>     
+</script> 
 <script type="text/javascript">
     emailjs.init('wd4apaVDXT-Qebbcc')
 </script>
+
 </html>
