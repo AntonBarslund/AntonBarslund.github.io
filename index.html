@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="static/final.css">
+    <link rel="stylesheet" type="text/css" href="../static/final.css">
     <title>Bror Bruland</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,9 +35,13 @@
     </div>
 
     <div id="about" class="segment">
-        <div id="bheader">OM MIG</div>
+        <div id="bheader">Hej, mit navn er Bror.</div>
         <div id="btext">
-            Hos Bruland Creative Performance er vores mission at fremme den fysiske såvel som mentale sundhed i den danske musikbranche gennem fysisk aktivitet og personlig træning. Gennem fysisk træning og læring om denne, forsøger vi at gøre musikere og folk i den kreative branche, stærkere og klogere på styrketræning.
+            Jeg har været personlig træner siden 2020, hvor jeg gennem Trænerakademiet fik mit personlige trænercertifikat. I de sidste 2 år har jeg stort set udelukkende beskæftiget mig med musikere og kreative. Derigennem har jeg lært en del om den kreative branche og hvilke udfordringer, der hører med, både fysisk og psykisk.
+            
+            Jeg er bosat i København og er at finde i SCH (Sporting Health Club), primært på Borups Allé, hvor jeg arbejder fuldtid som træner. Med min egen træning er jeg nysgerrig og legende og prøver altid at lære nyt om træning og bevægelse.
+            
+            Af den grund er min tilgang til træning, at den skal tilpasses dit liv og din hverdag - også med tourné, kroforplejning og lange køredage.
         </div>
     </div>
 
@@ -45,7 +49,7 @@
         <div id="cprices">
             <div id="pricesheader">FORLØB</div>
             <div id="pricescontent">
-                <div id="online" class="price">
+                <div id="online" class="price" style="display: none;">
                     <div class="priceheader"> ONLINE</div>
                     <div class="pricebullets"> 
                         <div class="bullet">
@@ -81,36 +85,31 @@
                     <div class="priceprice">1400,-/md. </div>
                 </div>
                 <div id="offline" class="price">
-                    <div class="priceheader"> OFFLINE</div>
+                    <div class="priceheader"> Fysisk forløb</div>
                     <div class="pricebullets"> 
                         <div class="bullet">
                             <div class="bulletlogo">&#x2713</div>
-                            <div class="bullettext">Træningsprogram & Plan med udgangspunkt i individuelle målsætninger</div>
+                            <div class="bullettext">Træningsprogram med udgangspunkt i individuel målsætning</div>
                         </div>
                         <div class="bullet">
                             <div class="bulletlogo">&#x2713</div>
-                            <div class="bullettext">Ugentlig Check-In m. video & teknisk feedback a’ 20 min varighed</div>
+                            <div class="bullettext">Vejledning i løfteteknik og massere af viden om træning </div>
                         </div>
                         <div class="bullet">
                             <div class="bulletlogo">&#x2713</div>
-                            <div class="bullettext">Besvarelse af spørgsmål indenfor 24-timer
-                            </div>
+                            <div class="bullettext">Vejledning og coaching i kost og vaner </div>
                         </div>
                         <div class="bullet">
                             <div class="bulletlogo">&#x2713</div>
-                            <div class="bullettext">Vejledning & coaching i kost, vaner & makroernæring</div>
+                            <div class="bullettext">Ingen binding, ingen opstarts gebyr </div>
                         </div>
                         <div class="bullet">
                             <div class="bulletlogo">&#x2713</div>
-                            <div class="bullettext">Tonsvis af viden indenfor træning, kost & no bullshit</div>
+                            <div class="bullettext">Besvarelse af spørgsmål indenfor 24 timer </div>
                         </div>
                         <div class="bullet">
                             <div class="bulletlogo">&#x2713</div>
-                            <div class="bullettext">Mulighed for tilkøb af fysiske sessioner</div>
-                        </div>
-                        <div class="bullet">
-                            <div class="bulletlogo">&#x2713</div>
-                            <div class="bullettext"> Ingen binding & ingen opstartsgebyr</div>
+                            <div class="bullettext">Viden og sparring indenfor </div>
                         </div>
                     </div>
                     <div class="priceprice">1400,-/md. </div>
@@ -158,9 +157,10 @@
                 <div class="formrow">
                     <select name="experience" id="experience" >
                         <option value="placeholder">Erfaring</option>
-                        <option value="beginner">0 - 2 år (begynder)</option>
-                        <option value="intermediate">2 - 4 (øvet)</option>
-                        <option value="advanced">4+ år (trænet)</option>
+                        <option value="ingen"> Ingen (0 år)</option>
+                        <option value="lidt"> Lidt (0-2)</option>
+                        <option value="Middel"> Middel (2-4)</option>
+                        <option value="Erfaren"> Erfaren (4+)</option>
                       </select>
                 </div>
                 <div class="formrow">
@@ -178,7 +178,7 @@
 
     <footer>
         <div id="footerlinks">
-            <div class="footerlink"><a href="templates/handelsbetingelser.html">Handelsbetingelser</a></div>
+            <div class="footerlink"><a href="../templates/handelsbetingelser.html">Handelsbetingelser</a></div>
             <div class="footerlink"></div>
             <div class="footerlink">© Bruland creative performance</div>
             <div class="footerlink">All Rights Reserved. CVR: 43834223</div>
@@ -192,7 +192,7 @@
     </footer>
     
 </body>
-<script src="static/final.js"></script>
+<script src="../static/final.js"></script>
 <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script> 
